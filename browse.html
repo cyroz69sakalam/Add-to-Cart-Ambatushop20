@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMBATUSHOP</title>
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/fontawesome.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/brands.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/regular.css">
+    <link rel="stylesheet" href="fontawesome-free-6.5.1-web/fontawesome-free-6.5.1-web/css/solid.css">
+
+    
+
+</head>
+
+<!-- <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+<body class="bg-info">
+    
+    <nav class="navbar navbar-expand-lg bg-info">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="shoplogo.jpg" width="100" height="100">
+        </a>
+          <p class="navbar-brand">AMBATUSHOP 24/7<br></p>
+
+        
+        
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <a class="nav-link active" aria-current="page" href="websiteSIA2.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Login.html">Log In
+
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="SHOP.html">SHOP HERE!
+
+              </a>
+              <li class="nav-item">
+                <a class="nav-link" href="browse.html">Browse More
+
+                </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="yourcart.html">Your Cart
+  
+                  </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                 shop by: 
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="discover.html">Shop Now!</a></li>
+                <li><a class="dropdown-item" href="#">Buy Anything you need!</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          
+            <button><a class="dropdown-item" href="Signin.html"> New User?</a>
+            </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- dataTables -->
+<link rel="stylesheet" href="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.css">
+<link rel="stylesheet" href="datatables/css/bootstrap.min.css">
+<link rel="stylesheet" href="datatables/css/buttons.bootstrap5.css">
+<link rel="stylesheet" href="datatables/css/datatables.bootstap5.css">
+
+<!-- DataTables
+<script src="datatables/js/jquery-3.7.1.js"></script>
+<script src="datatables/js/bootstrap.bundle.min.js"></script>
+<script src="datatables/js/dataTables.js"></script>
+<script src="datatables/js/dataTables.bootstrap5.js"></script>
+<script src="datatables/js/dataTables.buttons.js"></script>
+<script src="datatables/js/buttons.bootstrap5.js"></script>
+<script src="datatables/js/jszip.min.js"></script>
+<script src="datatables/js/pdfmake.min.js"></script>
+<script src="datatables/js/vfs_fonts.js"></script>
+<script src="datatables/js/buttons.html5.min.js"></script>
+<script src="datatables/js/buttons.print.min.js"></script>
+<script src="datatables/js/buttons.colVis.min.js"></script>
+<br> -->
+
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Ambatushop</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Thanks for choosing AMBATUSHOP
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+          <script src="sweetalert.js"></script>
+          
+
+          <script>
+              $(document).on('click','#btnswal', function(){
+              swal ("HELLO THERE");
+            })
+          </script>
+          
+          
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+           Click Here
+          </button>
+          
+        <h1>Catalogue Products List</h1>
+        
+        <table id="example" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Price</th>
+                    <th>Stock Quantity</th>
+                    <th>Category</th>
+                    <th>Quantity</th>
+                </tr>
+            </thead>
+            <tbody> 
+                <tr>
+                    <td>Emmanuel's Longganisa Classic</td>
+                    <td>PHP 69</td>
+                    <td>250</td>
+                    <td>Proccessed Meat</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Emmanuel's Vegan Longganisa Classic</td>
+                    <td>PHP 95</td>
+                    <td>250</td>
+                    <td>Plant based deli</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Emmanuel's Longganisa less sodium</td>
+                    <td>PHP 80.11</td>
+                    <td>250</td>
+                    <td>Proccessed Meat</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Emmanuel's Longganisa Lite</td>
+                    <td>PHP 83</td>
+                    <td>250</td>
+                    <td>Proccessed Meat</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Emmanuel's Longganisa Chicken</td>
+                    <td>PHP 75</td>
+                    <td>250</td>
+                    <td>Proccessed Meat</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Emmanuel's Premium Whole Nuts</td>
+                    <td>PHP 69</td>
+                    <td>200</td>
+                    <td>Vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Whole premium peanuts</td>
+                    <td>PHP 69</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Onions</td>
+                    <td>PHP 50</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Garlic</td>
+                    <td>PHP 55</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Ampalaya</td>
+                    <td>PHP 95</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Lemon</td>
+                    <td>PHP 80</td>
+                    <td>200</td>
+                    <td>fruits</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>lime</td>
+                    <td>PHP 95</td>
+                    <td>200</td>
+                    <td>fruits</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Potatoes</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Ginger</td>
+                    <td>PHP 65</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Sweet Potato</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Cabbage</td>
+                    <td>PHP 95</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Tomatoes</td>
+                    <td>PHP 55</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Zucchini</td>
+                    <td>PHP 95</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Squash</td>
+                    <td>PHP 95</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Apple Fuji</td>
+                    <td>PHP 55</td>
+                    <td>200</td>
+                    <td>fruits</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Oranges</td>
+                    <td>PHP 65</td>
+                    <td>200</td>
+                    <td>fruits</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Eggplant</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Hansel Crackers</td>
+                    <td>PHP 65</td>
+                    <td>200</td>
+                    <td>biscuits</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Hansel Milk</td>
+                    <td>PHP 65</td>
+                    <td>200</td>
+                    <td>biscuits</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Hansel Chocolate</td>
+                    <td>PHP 65</td>
+                    <td>200</td>
+                    <td>biscuits</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Rebisco Crackers</td>
+                    <td>PHP 65</td>
+                    <td>200</td>
+                    <td>biscuits</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Fita Crackers</td>
+                    <td>PHP 65</td>
+                    <td>200</td>
+                    <td>biscuits</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Broccoli</td>
+                    <td>PHP 125</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Cauliflower</td>
+                    <td>PHP 150</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Cassava</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>vegetables and legumes</td>
+                    <td>1kl</td>
+                </tr>
+                <tr>
+                    <td>Fibisco Chocolate Chip</td>
+                    <td>PHP 95</td>
+                    <td>200</td>
+                    <td>biscuits</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Western's Fresh Milk</td>
+                    <td>PHP 35</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>350mL</td>
+                </tr>
+                <tr>
+                    <td>Western's Chocolate Milk</td>
+                    <td>PHP 35</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>350mL</td>
+                </tr>
+                <tr>
+                    <td>Western's lowfat Milk</td>
+                    <td>PHP 40</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>350mL</td>
+                </tr>
+                <tr>
+                    <td>Magnolia lowfat Milk</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>1L</td>
+                </tr>
+                <tr>
+                    <td>Magnolia Fresh Milk</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>1L</td>
+                </tr>
+                <tr>
+                    <td>Western's Fresh Milk</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>1L</td>
+                </tr>
+                <tr>
+                    <td>Alaska Fresh Milk</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>1L</td>
+                </tr>
+                <tr>
+                    <td>Alaska Lowfat Milk</td>
+                    <td>PHP 77</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>1L</td>
+                </tr>
+                <tr>
+                    <td>Western's Chocolate Milk</td>
+                    <td>PHP 81</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>1L</td>
+                </tr>
+                <tr>
+                    <td>Western's Soya Milk</td>
+                    <td>PHP 74.34</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>1L</td>
+                </tr>
+                <tr>
+                    <td>Western's Fresh Milk</td>
+                    <td>PHP 75</td>
+                    <td>200</td>
+                    <td>beverage</td>
+                    <td>1L</td>
+                </tr>
+                <tr>
+                    <td>Bruno cleanser</td>
+                    <td>PHP 45</td>
+                    <td>250</td>
+                    <td>household supplies</td>
+                    <td>500g</td>
+                <tr>
+                    <td>Bruno cleanser lemon</td>
+                    <td>PHP 45</td>
+                    <td>250</td>
+                    <td>household supplies</td>
+                    <td>500g</td>
+                </tr>
+                <tr>
+                    <td>Zonrox original</td>
+                    <td>PHP 15</td>
+                    <td>250</td>
+                    <td>household supplies</td>
+                    <td>350ml</td>
+                </tr>
+                <tr>
+                    <td>Zonrox lemon fresh</td>
+                    <td>PHP 15</td>
+                    <td>250</td>
+                    <td>household supplies</td>
+                    <td>350ml</td>
+                </tr>
+                <tr>
+                    <td>Zonrox fresh</td>
+                    <td>PHP 15</td>
+                    <td>250</td>
+                    <td>household supplies</td>
+                    <td>350ml</td>
+                </tr>
+                <tr>
+                    <td>Zonrox floral</td>
+                    <td>PHP 15</td>
+                    <td>250</td>
+                    <td>household supplies</td>
+                    <td>350ml</td>
+                </tr>
+                <tr>
+                    <td>Head & Shoulders lemon</td>
+                    <td>PHP 55</td>
+                    <td>250</td>
+                    <td>personal care supplies</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Head & Shoulders smooth and silky</td>
+                    <td>PHP 55</td>
+                    <td>250</td>
+                    <td>personal care supplies</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Pantene Hairfall control</td>
+                    <td>PHP 75</td>
+                    <td>250</td>
+                    <td>personal care supplies</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Rejoice Rich</td>
+                    <td>PHP 85</td>
+                    <td>250</td>
+                    <td>personal care supplies</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Fibisco Butter Cookies</td>
+                    <td>PHP 75</td>
+                    <td>250</td>
+                    <td>biscuits</td>
+                    <td>500g</td>
+                </tr>
+                <tr>
+                    <td>Fibisco HiRo</td>
+                    <td>PHP 65</td>
+                    <td>250</td>
+                    <td>biscuits</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Pocky Chocolate</td>
+                    <td>PHP 50</td>
+                    <td>250</td>
+                    <td>biscuits</td>
+                    <td>500g</td>
+                </tr>
+                <tr>
+                    <td>Michael Hair Gel</td>
+                    <td>PHP 55</td>
+                    <td>250</td>
+                    <td>personal care supplies</td>
+                    <td>10s</td>
+                </tr>
+                <tr>
+                    <td>Cream Silk</td>
+                    <td>PHP 75</td>
+                    <td>250</td>
+                    <td>personal care supplies</td>
+                    <td>10s</td>
+                </tr>
+            </tbody>
+            <tfoot>
+               
+        </table>
+        
+          </div>
+
+          
+
+          <script src="datatables/js/jquery-3.7.1.js"></script>
+<script src="datatables/js/bootstrap.bundle.min.js"></script>
+<script src="datatables/js/dataTables.js"></script>
+<script src="datatables/js/dataTables.bootstrap5.js"></script>
+<script src="datatables/js/dataTables.buttons.js"></script>
+<script src="datatables/js/buttons.bootstrap5.js"></script>
+<script src="datatables/js/jszip.min.js"></script>
+<script src="datatables/js/pdfmake.min.js"></script>
+<script src="datatables/js/vfs_fonts.js"></script>
+<script src="datatables/js/buttons.html5.min.js"></script>
+<script src="datatables/js/buttons.print.min.js"></script>
+<script src="datatables/js/buttons.colVis.min.js"></script>
+         
+        
+
+         <script>
+            new DataTable('#example', {
+                layout: {
+                    topStart: {
+                        buttons: ['copy', 'excel', 'pdf', 'colvis']
+                    }
+                }
+            });
+            </script>
+              <!--SWAL-->
+
+              <button class="btn btn-warning" id="btnswal">swal</button>
+              <script>
+                $(document).on('click','#btnswal', function(){
+                    swal({
+      title: "Are you sure?",
+      text: "Once deleted, you will not be able to recover this imaginary file!",
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    })
+    .then((willDelete) => {
+      if (willDelete) {
+        swal("Poof! Your imaginary file has been deleted!", {
+          icon: "success",
+        });
+      } else {
+        swal("Nice! Your imaginary file is safe!");
+      }
+    });
+    });
+    
+    </script>
+
+</body>
+</html>

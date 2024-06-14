@@ -1,0 +1,48 @@
+#list{
+    animation: slideIn 1.5s ease forwards ;
+}
+@keyframes slideIn {
+    0%{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+}
+body{
+    background-color: blue;
+}
+#logo{
+    animation: slideIn 1.5s ease forwards ;
+}
+@keyframes slideIn {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#bomby {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    animation: moveSide 15s infinite;
+  }
+  
+  @keyframes moveSide {
+    0% {
+      left: 0px;
+    }
+    50% {
+      left: calc(100% - 50px);
+    }
+    100% {
+      left: 0px;
+    }
+  }
